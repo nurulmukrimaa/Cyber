@@ -1312,7 +1312,71 @@
             },
             "width": 200,
             "height": 100,
-            "zIndex": 11,
+            "zIndex": 12,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "023ebbc1-76a7-4e24-945b-0c9a570c91ee",
+            "source": {
+              "x": 770,
+              "y": 570
+            },
+            "target": {
+              "cell": "9cdb6ffa-6c97-49e8-99d1-34951eba8a45",
+              "port": "2814d3b6-2769-4296-8846-e4a25df7399c"
+            },
+            "vertices": [
+              {
+                "x": 940,
+                "y": 90
+              },
+              {
+                "x": 1170,
+                "y": 30
+              },
+              {
+                "x": 1290,
+                "y": 60
+              },
+              {
+                "x": 1370,
+                "y": 100
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 13,
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
@@ -1347,52 +1411,6 @@
                 "y": 240
               }
             ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 12,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "023ebbc1-76a7-4e24-945b-0c9a570c91ee",
-            "source": {
-              "x": 770,
-              "y": 570
-            },
-            "target": {
-              "cell": "9cdb6ffa-6c97-49e8-99d1-34951eba8a45",
-              "port": "2814d3b6-2769-4296-8846-e4a25df7399c"
-            }
           }
         ],
         "description": "Diagram aliran data pada sistem berbagi dokumen melalui tautan sementara"
