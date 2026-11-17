@@ -608,13 +608,6 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -1526,8 +1519,8 @@
                 "y": 410
               },
               {
-                "x": 1020,
-                "y": 600
+                "x": 900,
+                "y": 620
               }
             ]
           },
@@ -1551,6 +1544,58 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
+              "name": "File dokumen \nuntuk diunduh",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "File dokumen \nuntuk diunduh"
+            ],
+            "id": "ed9ddf4e-6741-4631-8df7-40e11ffaedae",
+            "source": {
+              "x": 770,
+              "y": 570
+            },
+            "target": {
+              "cell": "a9e2e457-a19f-48a6-8426-a3c5a9aedb3b",
+              "port": "6aa4aacd-f757-469f-818c-401e594852d7"
+            },
+            "vertices": [
+              {
+                "x": 930,
+                "y": 360
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 16,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
               "name": "Data Flow",
               "description": "",
               "outOfScope": false,
@@ -1567,15 +1612,21 @@
             "labels": [
               "Data Flow"
             ],
-            "id": "ed9ddf4e-6741-4631-8df7-40e11ffaedae",
+            "id": "c137a54e-32bb-42b5-aca2-9c4835053d8f",
             "source": {
-              "x": 770,
-              "y": 570
+              "cell": "abea25f7-59c7-46f0-a56f-e7a5a8055172",
+              "port": "98421ef4-b746-4f8d-ade2-401472c29bcc"
             },
             "target": {
-              "cell": "a9e2e457-a19f-48a6-8426-a3c5a9aedb3b",
-              "port": "6aa4aacd-f757-469f-818c-401e594852d7"
-            }
+              "cell": "9cdb6ffa-6c97-49e8-99d1-34951eba8a45",
+              "port": "e4779018-8699-48a9-a8c3-095c76fede92"
+            },
+            "vertices": [
+              {
+                "x": 1710,
+                "y": 590
+              }
+            ]
           }
         ],
         "description": "Diagram aliran data pada sistem berbagi dokumen melalui tautan sementara"
