@@ -1316,7 +1316,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "permintaan validasi tautan",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1330,11 +1330,11 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "permintaan validasi tautan"
             ],
             "id": "023ebbc1-76a7-4e24-945b-0c9a570c91ee",
             "source": {
-              "x": 770,
+              "x": 730,
               "y": 570
             },
             "target": {
@@ -1343,20 +1343,20 @@
             },
             "vertices": [
               {
-                "x": 940,
-                "y": 90
+                "x": 830,
+                "y": 190
               },
               {
-                "x": 1170,
-                "y": 30
-              },
-              {
-                "x": 1290,
+                "x": 960,
                 "y": 60
               },
               {
-                "x": 1370,
-                "y": 100
+                "x": 1200,
+                "y": 60
+              },
+              {
+                "x": 1300,
+                "y": 80
               }
             ]
           },
@@ -1411,6 +1411,52 @@
                 "y": 240
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 14,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "6d498b52-ec69-454d-a6e4-78e4acc94974",
+            "source": {
+              "x": 1430,
+              "y": 190
+            },
+            "target": {
+              "cell": "abea25f7-59c7-46f0-a56f-e7a5a8055172",
+              "port": "98421ef4-b746-4f8d-ade2-401472c29bcc"
+            }
           }
         ],
         "description": "Diagram aliran data pada sistem berbagi dokumen melalui tautan sementara"
