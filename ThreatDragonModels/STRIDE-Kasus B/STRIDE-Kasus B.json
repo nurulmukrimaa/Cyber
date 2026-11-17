@@ -1,0 +1,29 @@
+{
+  "version": "2.6.2",
+  "release_version": "1.0",
+  "released_at": "2026-11-17",
+  "summary": {
+    "title": "STRIDE-Kasus B",
+    "owner": "Nurul Mukrima Amir",
+    "description": "Sistem Berbagi Dokumen melalui Tautan Sementara merupakan aplikasi berbasis web yang memungkinkan pengguna mengunggah dokumen dan membagikannya kepada penerima internal maupun eksternal melalui tautan sementara. Backend Dokumen mengelola proses unggah, pembuatan tautan, pencabutan akses, dan permintaan unduh. Database Metadata menyimpan informasi pemilik, metadata dokumen, masa berlaku tautan, status pencabutan, serta log audit. Isi dokumen disimpan pada Object Storage. Tautan berbagi berlaku selama 24 jam dan penerima tidak diwajibkan login untuk mengakses tautan.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "DFD Sistem Berbagi Dokumen",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": [],
+        "description": "Diagram aliran data pada sistem berbagi dokumen melalui tautan sementara"
+      }
+    ],
+    "diagramTop": 2,
+    "reviewer": "Dosen",
+    "threatTop": 0
+  }
+}
