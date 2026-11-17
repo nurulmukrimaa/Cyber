@@ -35,8 +35,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "61223e7c-3e58-4aca-92d7-c56687e03dbc",
             "zIndex": -1,
+            "id": "61223e7c-3e58-4aca-92d7-c56687e03dbc",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Area Publik (Public Zone)",
@@ -48,8 +48,8 @@
                 "1d1985a0-56a8-4857-9330-73ec58c88c66",
                 "139085a0-c9ec-4a57-ba6f-0604b34a150d",
                 "7f9d3ea5-9d20-4a8d-bc98-7638e3ad7af5",
-                "ed9ddf4e-6741-4631-8df7-40e11ffaedae",
-                "748b0ea0-6754-4cf8-ac49-56161b5bb8e5"
+                "748b0ea0-6754-4cf8-ac49-56161b5bb8e5",
+                "ed9ddf4e-6741-4631-8df7-40e11ffaedae"
               ],
               "containedElements": [
                 "ceff6060-5cec-4544-a2cc-e58551ffaf14",
@@ -57,13 +57,6 @@
                 "7baccb6d-3342-4fcd-9159-6b6729927dc4",
                 "a9e2e457-a19f-48a6-8426-a3c5a9aedb3b"
               ]
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -82,6 +75,7 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
+            "zIndex": -1,
             "id": "ad3e9a9f-cac2-423f-ab6a-ccd13d81ccfd",
             "data": {
               "type": "tm.BoundaryBox",
@@ -92,24 +86,23 @@
               "crossingFlows": [
                 "1d1985a0-56a8-4857-9330-73ec58c88c66",
                 "139085a0-c9ec-4a57-ba6f-0604b34a150d",
-                "c5f48d53-bfb3-4682-a57a-d08ee88166af",
                 "23d679f8-7235-4cc9-b606-dc963b475b63",
                 "7f9d3ea5-9d20-4a8d-bc98-7638e3ad7af5",
                 "12f81faf-a2ff-4ab7-8992-674acc4ceead",
+                "c5f48d53-bfb3-4682-a57a-d08ee88166af",
                 "023ebbc1-76a7-4e24-945b-0c9a570c91ee",
                 "5ba1f72c-8179-4d73-929b-ddf3e9148ce0",
                 "6d498b52-ec69-454d-a6e4-78e4acc94974",
-                "ed9ddf4e-6741-4631-8df7-40e11ffaedae",
                 "c137a54e-32bb-42b5-aca2-9c4835053d8f",
                 "cb5a63b2-b377-498f-a5da-a36151797c3d",
                 "c51cf96f-f4ee-4d6c-8b8f-d6955657e2f4",
-                "748b0ea0-6754-4cf8-ac49-56161b5bb8e5"
+                "748b0ea0-6754-4cf8-ac49-56161b5bb8e5",
+                "ed9ddf4e-6741-4631-8df7-40e11ffaedae"
               ],
               "containedElements": [
                 "abea25f7-59c7-46f0-a56f-e7a5a8055172"
               ]
-            },
-            "zIndex": -1
+            }
           },
           {
             "position": {
@@ -127,6 +120,7 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
+            "zIndex": -1,
             "id": "fb798533-f113-4ea4-9aa6-0897277ac6b4",
             "data": {
               "type": "tm.BoundaryBox",
@@ -135,9 +129,9 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "c5f48d53-bfb3-4682-a57a-d08ee88166af",
                 "23d679f8-7235-4cc9-b606-dc963b475b63",
                 "12f81faf-a2ff-4ab7-8992-674acc4ceead",
+                "c5f48d53-bfb3-4682-a57a-d08ee88166af",
                 "023ebbc1-76a7-4e24-945b-0c9a570c91ee",
                 "5ba1f72c-8179-4d73-929b-ddf3e9148ce0",
                 "6d498b52-ec69-454d-a6e4-78e4acc94974",
@@ -147,8 +141,7 @@
                 "9cdb6ffa-6c97-49e8-99d1-34951eba8a45",
                 "d5138736-ac57-48f2-a00c-9b41a288954f"
               ]
-            },
-            "zIndex": -1
+            }
           },
           {
             "position": {
@@ -1290,61 +1283,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Metadata dokumen\ndan\nidentitas pemilik",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "ad3e9a9f-cac2-423f-ab6a-ccd13d81ccfd",
-                "fb798533-f113-4ea4-9aa6-0897277ac6b4"
-              ]
-            },
-            "labels": [
-              "Metadata dokumen\ndan\nidentitas pemilik"
-            ],
-            "id": "c5f48d53-bfb3-4682-a57a-d08ee88166af",
-            "source": {
-              "cell": "abea25f7-59c7-46f0-a56f-e7a5a8055172",
-              "port": "6aa4aacd-f757-469f-818c-401e594852d7"
-            },
-            "target": {
-              "cell": "9cdb6ffa-6c97-49e8-99d1-34951eba8a45",
-              "port": "2a609d98-b893-4764-96ec-0fa8d3d83e00"
-            },
-            "vertices": [
-              {
-                "x": 1260,
-                "y": 360
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Isi file dokumen",
               "description": "",
               "outOfScope": false,
@@ -1659,14 +1597,13 @@
               "cell": "a9e2e457-a19f-48a6-8426-a3c5a9aedb3b",
               "port": "86d5f125-c538-428e-9770-f269c9aa5b98"
             },
-            "vertices": [
-              {
-                "x": 270,
-                "y": 350
-              }
-            ],
             "tools": {
               "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
                 "boundary",
                 "button-remove",
                 "vertices",
@@ -1784,7 +1721,68 @@
                 "target-arrowhead"
               ],
               "name": null
-            }
+            },
+            "vertices": [
+              {
+                "x": 270,
+                "y": 350
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Metadata dokumen\ndan\nidentitas pemilik",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "ad3e9a9f-cac2-423f-ab6a-ccd13d81ccfd",
+                "fb798533-f113-4ea4-9aa6-0897277ac6b4"
+              ]
+            },
+            "labels": [
+              "Metadata dokumen\ndan\nidentitas pemilik"
+            ],
+            "id": "c5f48d53-bfb3-4682-a57a-d08ee88166af",
+            "source": {
+              "cell": "abea25f7-59c7-46f0-a56f-e7a5a8055172",
+              "port": "6aa4aacd-f757-469f-818c-401e594852d7"
+            },
+            "target": {
+              "cell": "9cdb6ffa-6c97-49e8-99d1-34951eba8a45",
+              "port": "2a609d98-b893-4764-96ec-0fa8d3d83e00"
+            },
+            "vertices": [
+              {
+                "x": 1260,
+                "y": 360
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1834,20 +1832,6 @@
               "cell": "9cdb6ffa-6c97-49e8-99d1-34951eba8a45",
               "port": "2814d3b6-2769-4296-8846-e4a25df7399c"
             },
-            "vertices": [
-              {
-                "x": 990,
-                "y": 220
-              },
-              {
-                "x": 1110,
-                "y": 120
-              },
-              {
-                "x": 1300,
-                "y": 120
-              }
-            ],
             "tools": {
               "items": [
                 "boundary",
@@ -1867,7 +1851,21 @@
                 "target-arrowhead"
               ],
               "name": null
-            }
+            },
+            "vertices": [
+              {
+                "x": 990,
+                "y": 220
+              },
+              {
+                "x": 1110,
+                "y": 120
+              },
+              {
+                "x": 1300,
+                "y": 120
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1988,61 +1986,6 @@
               {
                 "x": 1160,
                 "y": 480
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 15,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "File dokumen \nuntuk diunduh",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "61223e7c-3e58-4aca-92d7-c56687e03dbc",
-                "ad3e9a9f-cac2-423f-ab6a-ccd13d81ccfd"
-              ]
-            },
-            "labels": [
-              "File dokumen \nuntuk diunduh"
-            ],
-            "id": "ed9ddf4e-6741-4631-8df7-40e11ffaedae",
-            "source": {
-              "cell": "abea25f7-59c7-46f0-a56f-e7a5a8055172",
-              "port": "86d5f125-c538-428e-9770-f269c9aa5b98"
-            },
-            "target": {
-              "cell": "a9e2e457-a19f-48a6-8426-a3c5a9aedb3b",
-              "port": "6aa4aacd-f757-469f-818c-401e594852d7"
-            },
-            "vertices": [
-              {
-                "x": 790,
-                "y": 360
               }
             ]
           },
@@ -2303,6 +2246,226 @@
                 "y": 520
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 20,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "File dokumen \nuntuk diunduh",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "61223e7c-3e58-4aca-92d7-c56687e03dbc",
+                "ad3e9a9f-cac2-423f-ab6a-ccd13d81ccfd"
+              ]
+            },
+            "labels": [
+              "File dokumen \nuntuk diunduh"
+            ],
+            "id": "ed9ddf4e-6741-4631-8df7-40e11ffaedae",
+            "source": {
+              "cell": "abea25f7-59c7-46f0-a56f-e7a5a8055172",
+              "port": "86d5f125-c538-428e-9770-f269c9aa5b98"
+            },
+            "target": {
+              "cell": "a9e2e457-a19f-48a6-8426-a3c5a9aedb3b",
+              "port": "6aa4aacd-f757-469f-818c-401e594852d7"
+            },
+            "vertices": [
+              {
+                "x": 790,
+                "y": 360
+              }
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           }
         ],
         "description": "Diagram aliran data pada sistem berbagi dokumen melalui tautan sementara"
