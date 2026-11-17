@@ -102,6 +102,13 @@
               "containedElements": [
                 "abea25f7-59c7-46f0-a56f-e7a5a8055172"
               ]
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1405,7 +1412,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Isi file dokumen",
+              "name": "Permintaan pengambilan \nfile dokumen",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1422,7 +1429,7 @@
               ]
             },
             "labels": [
-              "Isi file dokumen"
+              "Permintaan pengambilan \nfile dokumen"
             ],
             "id": "12f81faf-a2ff-4ab7-8992-674acc4ceead",
             "source": {
@@ -2295,12 +2302,6 @@
               "cell": "a9e2e457-a19f-48a6-8426-a3c5a9aedb3b",
               "port": "6aa4aacd-f757-469f-818c-401e594852d7"
             },
-            "vertices": [
-              {
-                "x": 790,
-                "y": 360
-              }
-            ],
             "tools": {
               "items": [
                 "boundary",
@@ -2465,7 +2466,13 @@
                 "target-arrowhead"
               ],
               "name": null
-            }
+            },
+            "vertices": [
+              {
+                "x": 790,
+                "y": 360
+              }
+            ]
           }
         ],
         "description": "Diagram aliran data pada sistem berbagi dokumen melalui tautan sementara"
