@@ -1364,6 +1364,58 @@
             },
             "width": 200,
             "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "9e46bfaf-a65f-47b7-8ef5-710f59068a43",
+            "source": {
+              "x": 140,
+              "y": 820
+            },
+            "target": {
+              "x": 370,
+              "y": 750
+            },
+            "vertices": [
+              {
+                "x": 170,
+                "y": 750
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
             "zIndex": 12,
             "connector": "smooth",
             "data": {
@@ -1596,7 +1648,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Catatan aktivitas akses\ndan \ndownload dokumen",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1610,7 +1662,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Catatan aktivitas akses\ndan \ndownload dokumen"
             ],
             "id": "c137a54e-32bb-42b5-aca2-9c4835053d8f",
             "source": {
@@ -1623,8 +1675,12 @@
             },
             "vertices": [
               {
-                "x": 1710,
-                "y": 590
+                "x": 1540,
+                "y": 570
+              },
+              {
+                "x": 1630,
+                "y": 260
               }
             ]
           }
