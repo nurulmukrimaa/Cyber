@@ -142,7 +142,16 @@
                 "d5138736-ac57-48f2-a00c-9b41a288954f"
               ]
             },
-            "zIndex": -1
+            "zIndex": -1,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            }
           },
           {
             "position": {
