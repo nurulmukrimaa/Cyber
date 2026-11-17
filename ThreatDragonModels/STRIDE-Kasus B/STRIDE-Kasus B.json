@@ -142,16 +142,7 @@
                 "d5138736-ac57-48f2-a00c-9b41a288954f"
               ]
             },
-            "zIndex": -1,
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            }
+            "zIndex": -1
           },
           {
             "position": {
@@ -638,8 +629,8 @@
                 "text": "Backend \nDokumen"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -736,12 +727,60 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "e610e52c-5965-446f-b060-68ba868343f8",
+                  "title": "Penyamaran Identitas Pemilik Dokumen",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Penyerang menyamar sebagai pemilik dokumen dengan menggunakan identitas atau kredensial yang bukan miliknya. Jika backend tidak memverifikasi identitas dan kepemilikan dokumen dengan benar, penyerang dapat membuat atau mencabut tautan berbagi tanpa izin. Hal ini dapat menyebabkan dokumen dibagikan kepada pihak yang tidak berwenang atau tautan yang sah menjadi tidak dapat digunakan.",
+                  "mitigation": "Menerapkan autentikasi pengguna, memverifikasi identitas pemilik dokumen pada setiap permintaan pengelolaan tautan, dan memastikan hanya pemilik yang berwenang dapat membuat atau mencabut tautan.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                },
+                {
+                  "id": "6808b089-24be-4f98-ad3b-0f5f3cfcf3c9",
+                  "title": "Gangguan Layanan Backend Dokumen",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "Penyerang mengirimkan permintaan akses atau download secara berlebihan ke Backend Dokumen sehingga sumber daya server menjadi terbebani. Kondisi ini dapat menyebabkan proses unggah, pembuatan tautan, validasi tautan, dan download dokumen menjadi lambat atau tidak dapat digunakan oleh pengguna yang sah.",
+                  "mitigation": "Menerapkan pembatasan jumlah permintaan (rate limiting), pemantauan penggunaan sumber daya server, serta mekanisme perlindungan terhadap permintaan berlebihan. Backend juga perlu memiliki pengelolaan kapasitas dan pencatatan aktivitas untuk membantu mendeteksi pola permintaan yang tidak wajar.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                },
+                {
+                  "id": "672e0523-8984-48e4-a6f5-4eba1b69dad7",
+                  "title": "Peningkatan Hak Akses Tanpa Izin",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "Penyerang dapat memperoleh hak akses yang lebih tinggi dari hak akses yang seharusnya dimiliki dengan memanfaatkan kelemahan pemeriksaan otorisasi pada Backend Dokumen. Sebagai contoh, penerima eksternal yang seharusnya hanya dapat mengakses dokumen melalui tautan berbagi dapat mencoba melakukan tindakan yang seharusnya hanya dapat dilakukan oleh pemilik dokumen, seperti membuat atau mencabut tautan. Hal ini dapat menyebabkan pengelolaan dokumen dilakukan oleh pihak yang tidak berwenang.",
+                  "mitigation": "Menerapkan pemeriksaan otorisasi pada setiap permintaan yang diterima backend. Pisahkan hak akses pemilik dokumen, penerima eksternal, dan admin organisasi. Pastikan penerima eksternal hanya dapat mengakses dokumen melalui tautan yang valid, sedangkan tindakan pengelolaan dokumen hanya dapat dilakukan oleh pihak yang memiliki kewenangan.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 1
+              }
             }
           },
           {
@@ -758,11 +797,13 @@
                 "text": "Database Metadata"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -859,13 +900,46 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "58103fa8-c33f-4762-bde0-c3ab7dc38462",
+                  "title": "Manipulasi Metadata dan Status Tautan",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Penyerang melakukan perubahan tanpa izin terhadap metadata dokumen atau informasi tautan berbagi yang tersimpan di Database Metadata. Perubahan tersebut dapat mencakup identitas pemilik, masa berlaku tautan, atau status pencabutan. Akibatnya, sistem dapat memberikan akses kepada pihak yang tidak berhak atau menolak akses kepada penerima yang sah.",
+                  "mitigation": "Menerapkan pembatasan hak akses database, validasi setiap perubahan metadata, serta pencatatan aktivitas perubahan agar perubahan tanpa izin dapat dideteksi dan ditelusuri.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                },
+                {
+                  "id": "bae73744-7c5c-45b5-8d0e-1e30c7911ed9",
+                  "title": "Penyangkalan Aktivitas Akses dan Download",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Pengguna yang melakukan akses atau download dokumen dapat menyangkal aktivitasnya apabila sistem tidak mencatat informasi audit secara memadai. Jika catatan audit tidak menyimpan waktu, identitas pengguna atau identitas tautan, dan jenis aktivitas, admin akan kesulitan menelusuri kejadian ketika terjadi penyalahgunaan tautan atau akses dokumen.",
+                  "mitigation": "Mencatat log audit untuk aktivitas pembuatan tautan, pencabutan tautan, percobaan akses, dan download dokumen. Log perlu mencakup waktu kejadian, identitas pemilik atau tautan, jenis aktivitas, serta hasil akses. Selain itu, batasi akses ke log dan lindungi integritasnya agar tidak mudah diubah tanpa izin.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -882,11 +956,13 @@
                 "text": "Object Storage"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -983,13 +1059,33 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "7845f0f8-ee06-4d0e-a18d-4ac2943de430",
+                  "title": "Akses Tidak Sah terhadap File Dokumen",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Penyerang dapat memperoleh atau mengakses isi file dokumen tanpa izin apabila mekanisme penyimpanan dan pengambilan file tidak membatasi akses dengan benar. Kebocoran ini dapat menyebabkan informasi dalam dokumen diketahui oleh pihak yang tidak berwenang, terutama jika file dapat diakses secara langsung tanpa melalui proses validasi Backend Dokumen.",
+                  "mitigation": "Membatasi akses Object Storage agar hanya Backend Dokumen yang dapat mengambil file. Pastikan setiap permintaan download divalidasi berdasarkan identitas tautan, masa berlaku 24 jam, dan status pencabutan. Gunakan enkripsi untuk file saat disimpan dan saat dikirim.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -2079,6 +2175,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "Dosen",
-    "threatTop": 0
+    "threatTop": 6
   }
 }
