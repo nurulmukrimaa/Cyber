@@ -1123,8 +1123,8 @@
             },
             "vertices": [
               {
-                "x": 510,
-                "y": 350
+                "x": 610,
+                "y": 380
               },
               {
                 "x": 510,
@@ -1204,158 +1204,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Identitas tautan, \nmasa berlaku 24 jam,\ndan status pencabutan",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Identitas tautan, \nmasa berlaku 24 jam,\ndan status pencabutan"
-            ],
-            "id": "5ba1f72c-8179-4d73-929b-ddf3e9148ce0",
-            "source": {
-              "cell": "abea25f7-59c7-46f0-a56f-e7a5a8055172",
-              "port": "6aa4aacd-f757-469f-818c-401e594852d7"
-            },
-            "target": {
-              "cell": "9cdb6ffa-6c97-49e8-99d1-34951eba8a45",
-              "port": "5cfc1d51-cdee-427c-b7a8-659553bbc522"
-            },
-            "vertices": [
-              {
-                "x": 950,
-                "y": 240
-              }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Permintaan akses\nmelalui tautan\nberbagi",
               "description": "",
               "outOfScope": false,
@@ -1408,6 +1256,118 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
+              "name": "Permintaan akses\ndan\nunduh dokumen",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Permintaan akses\ndan\nunduh dokumen"
+            ],
+            "id": "1d1985a0-56a8-4857-9330-73ec58c88c66",
+            "source": {
+              "x": 670,
+              "y": 270
+            },
+            "target": {
+              "cell": "abea25f7-59c7-46f0-a56f-e7a5a8055172",
+              "port": "86d5f125-c538-428e-9770-f269c9aa5b98"
+            },
+            "vertices": [
+              {
+                "x": 510,
+                "y": 380
+              },
+              {
+                "x": 440,
+                "y": 430
+              },
+              {
+                "x": 390,
+                "y": 520
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 11,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Identitas tautan, \nmasa berlaku 24 jam,\ndan status pencabutan",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Identitas tautan, \nmasa berlaku 24 jam,\ndan status pencabutan"
+            ],
+            "id": "5ba1f72c-8179-4d73-929b-ddf3e9148ce0",
+            "source": {
+              "cell": "abea25f7-59c7-46f0-a56f-e7a5a8055172",
+              "port": "6aa4aacd-f757-469f-818c-401e594852d7"
+            },
+            "target": {
+              "cell": "9cdb6ffa-6c97-49e8-99d1-34951eba8a45",
+              "port": "5cfc1d51-cdee-427c-b7a8-659553bbc522"
+            },
+            "vertices": [
+              {
+                "x": 950,
+                "y": 240
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 12,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
               "name": "Data Flow",
               "description": "",
               "outOfScope": false,
@@ -1424,14 +1384,14 @@
             "labels": [
               "Data Flow"
             ],
-            "id": "1d1985a0-56a8-4857-9330-73ec58c88c66",
+            "id": "023ebbc1-76a7-4e24-945b-0c9a570c91ee",
             "source": {
-              "x": 670,
-              "y": 270
+              "x": 770,
+              "y": 570
             },
             "target": {
-              "cell": "abea25f7-59c7-46f0-a56f-e7a5a8055172",
-              "port": "86d5f125-c538-428e-9770-f269c9aa5b98"
+              "cell": "9cdb6ffa-6c97-49e8-99d1-34951eba8a45",
+              "port": "2814d3b6-2769-4296-8846-e4a25df7399c"
             }
           }
         ],
