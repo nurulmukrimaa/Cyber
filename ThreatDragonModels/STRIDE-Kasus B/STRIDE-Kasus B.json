@@ -1368,7 +1368,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Permintaan\npemeriksaan \nlog audit",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1382,7 +1382,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Permintaan\npemeriksaan \nlog audit"
             ],
             "id": "9e46bfaf-a65f-47b7-8ef5-710f59068a43",
             "source": {
@@ -1390,13 +1390,69 @@
               "y": 820
             },
             "target": {
-              "x": 370,
-              "y": 750
+              "cell": "a9e2e457-a19f-48a6-8426-a3c5a9aedb3b",
+              "port": "86d5f125-c538-428e-9770-f269c9aa5b98"
             },
             "vertices": [
               {
                 "x": 170,
                 "y": 750
+              },
+              {
+                "x": 300,
+                "y": 410
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Permintaan\npengambilan\nlog audit",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Permintaan\npengambilan\nlog audit"
+            ],
+            "id": "c51cf96f-f4ee-4d6c-8b8f-d6955657e2f4",
+            "source": {
+              "x": 720,
+              "y": 620
+            },
+            "target": {
+              "cell": "a9e2e457-a19f-48a6-8426-a3c5a9aedb3b",
+              "port": "6aa4aacd-f757-469f-818c-401e594852d7"
+            },
+            "vertices": [
+              {
+                "x": 900,
+                "y": 510
               }
             ]
           },
@@ -1683,6 +1739,52 @@
                 "y": 260
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 17,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "cb5a63b2-b377-498f-a5da-a36151797c3d",
+            "source": {
+              "x": 1440,
+              "y": 190
+            },
+            "target": {
+              "x": 1800,
+              "y": 370
+            }
           }
         ],
         "description": "Diagram aliran data pada sistem berbagi dokumen melalui tautan sementara"
