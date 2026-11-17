@@ -40,6 +40,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -123,7 +124,6 @@
               ]
             },
             "id": "ceff6060-5cec-4544-a2cc-e58551ffaf14",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Pemilik\n Dokumen",
@@ -157,6 +157,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -240,7 +241,6 @@
               ]
             },
             "id": "8a377fe3-6658-4328-9fc0-716d392690f8",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Penerima\nEksternal",
@@ -274,6 +274,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -357,7 +358,6 @@
               ]
             },
             "id": "7baccb6d-3342-4fcd-9159-6b6729927dc4",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
               "name": "Admin \nOrganisasi",
@@ -391,6 +391,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -474,7 +475,6 @@
               ]
             },
             "id": "a9e2e457-a19f-48a6-8426-a3c5a9aedb3b",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "Browser/\nAplikasi Web",
@@ -511,6 +511,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -594,7 +595,6 @@
               ]
             },
             "id": "abea25f7-59c7-46f0-a56f-e7a5a8055172",
-            "zIndex": 5,
             "data": {
               "type": "tm.Process",
               "name": "Backend \nDokumen",
@@ -634,6 +634,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -717,7 +718,6 @@
               ]
             },
             "id": "9cdb6ffa-6c97-49e8-99d1-34951eba8a45",
-            "zIndex": 6,
             "data": {
               "type": "tm.Store",
               "name": "Database Metadata",
@@ -758,6 +758,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 7,
             "ports": {
               "groups": {
                 "top": {
@@ -841,7 +842,6 @@
               ]
             },
             "id": "d5138736-ac57-48f2-a00c-9b41a288954f",
-            "zIndex": 7,
             "data": {
               "type": "tm.Store",
               "name": "Object Storage",
@@ -955,7 +955,11 @@
                 "y": 160
               },
               {
-                "x": 680,
+                "x": 640,
+                "y": 160
+              },
+              {
+                "x": 700,
                 "y": 180
               }
             ]
@@ -1048,10 +1052,69 @@
               "y": 570
             },
             "target": {
-              "x": 994,
-              "y": 720
+              "cell": "d5138736-ac57-48f2-a00c-9b41a288954f",
+              "port": "2814d3b6-2769-4296-8846-e4a25df7399c"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 1000,
+                "y": 570
+              },
+              {
+                "x": 1290,
+                "y": 600
+              },
+              {
+                "x": 1370,
+                "y": 670
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "f204ccc4-db7f-461d-8ff8-d99c6a02bb48",
+            "source": {
+              "x": 200,
+              "y": 130
+            },
+            "target": {
+              "cell": "a9e2e457-a19f-48a6-8426-a3c5a9aedb3b",
+              "port": "86d5f125-c538-428e-9770-f269c9aa5b98"
+            }
           }
         ],
         "description": "Diagram aliran data pada sistem berbagi dokumen melalui tautan sementara"
