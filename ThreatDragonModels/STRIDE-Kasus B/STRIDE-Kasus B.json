@@ -1472,6 +1472,62 @@
             },
             "width": 200,
             "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Hasil pemeriksaan \nlog audit",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Hasil pemeriksaan \nlog audit"
+            ],
+            "id": "748b0ea0-6754-4cf8-ac49-56161b5bb8e5",
+            "source": {
+              "x": 720,
+              "y": 620
+            },
+            "target": {
+              "cell": "a9e2e457-a19f-48a6-8426-a3c5a9aedb3b",
+              "port": "86d5f125-c538-428e-9770-f269c9aa5b98"
+            },
+            "vertices": [
+              {
+                "x": 620,
+                "y": 750
+              },
+              {
+                "x": 390,
+                "y": 750
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
             "zIndex": 12,
             "connector": "smooth",
             "data": {
@@ -1760,7 +1816,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Data log aktivitas aksess dan download dokumen",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1774,7 +1830,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Data log aktivitas aksess dan download dokumen"
             ],
             "id": "cb5a63b2-b377-498f-a5da-a36151797c3d",
             "source": {
