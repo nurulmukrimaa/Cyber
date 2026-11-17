@@ -1782,9 +1782,31 @@
               "y": 190
             },
             "target": {
-              "x": 1800,
-              "y": 370
-            }
+              "cell": "abea25f7-59c7-46f0-a56f-e7a5a8055172",
+              "port": "98421ef4-b746-4f8d-ade2-401472c29bcc"
+            },
+            "vertices": [
+              {
+                "x": 1750,
+                "y": 280
+              },
+              {
+                "x": 1810,
+                "y": 630
+              },
+              {
+                "x": 1630,
+                "y": 700
+              },
+              {
+                "x": 1590,
+                "y": 700
+              },
+              {
+                "x": 1100,
+                "y": 670
+              }
+            ]
           }
         ],
         "description": "Diagram aliran data pada sistem berbagi dokumen melalui tautan sementara"
